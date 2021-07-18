@@ -1,0 +1,37 @@
+{
+    "name": "ngx-imageengine-image",
+    "version": "0.0.11",
+    "description": "An Angular (12) component for easing usage of ImageEngine's distribution CDN. Includes functionality to derive sizing directives directly from the elements real display sizes and ancillary functionality such as lazy loading of off-screen images, viewport dimensions change responsiveness (as in, refetch of assets files if the directives/sizing changes)",
+    "homepage": "https://github.com/mnussbaumer/ngx-imageengine",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mnussbaumer/ngx-imageengine"
+    },
+    "author": "Micael Nussbaumer",
+    "license": "MIT",
+    "scripts": {
+        "test": "jest"
+    },
+    "peerDependencies": {
+        "@angular/common": "^12.1.1",
+        "@angular/core": "^12.1.1"
+    },
+    "dependencies": {
+        "imageengine-helpers": "^0.0.3",
+        "tslib": "^2.2.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.24",
+        "jest": "^27.0.6",
+        "jest-preset-angular": "^9.0.4"
+    },
+    "jest": {
+        "preset": "jest-preset-angular",
+        "setupFilesAfterEnv": [
+            "<rootDir>/setup-jest.ts"
+        ],
+        "roots": [
+            "<rootDir>/src"
+        ]
+    }
+}
